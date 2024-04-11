@@ -1,10 +1,15 @@
-function App() {
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import CarouselCard from "../components/CarouselCard";
 
-  return (
-    <>
-      <p> Hello World</p>
-    </>
-  )
+function App() {
+    return (
+        <>
+            <Navbar />
+            <Hero />
+            <CarouselCard />
+        </>
+    );
 }
 
-export default App
+export default App;
