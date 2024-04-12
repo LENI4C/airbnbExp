@@ -17,7 +17,6 @@ nav {
 }
 
 .hero {
-    border: 2px solid purple;
     margin-bottom: 5vh;
 }
 
@@ -26,33 +25,31 @@ nav {
     width: 80vw;
     height: auto;
     margin: .5em auto;
-    border: 2px solid red;
 }
 
 .carousel-section {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: .3em;
 }
 
 .card {
-    border: 2px solid blue;
-    width: 80%;
+    /* border: 2px solid blue; */
+    width: 75vw;
     margin: 1em auto 2em;
-}
-
-.card img {
-    max-width: 100%;
-    height: auto;
 }
 
 .card-image {
     overflow: hidden;
-    height: 200px;
     object-fit: top center;
+    margin-bottom: 3vh;
+    /* border: 2px solid purple; */
 }
-/* .user-image {
+
+.user-image {
     width: 100%;
-} */
+    aspect-ratio: 1 / 1;
+    /* border: 2px solid gold; */
+}
 
 .user-info img {
     width: 10px;
@@ -62,7 +59,7 @@ nav {
 @media (min-width : 768px) {
     
     body {
-        font-size: calc(1em + 1vw);
+        font-size: calc(1em + .6vw);
     }
     
     .hero img{
@@ -70,16 +67,13 @@ nav {
     }
 
     .carousel-section {
-        border: 2px solid red;
         display: flex;
         flex: 1;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: .3em;
     }
     
     .card {
-        border: 2px solid blue;
         width: 30%;
     }
 }

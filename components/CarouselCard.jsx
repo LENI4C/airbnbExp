@@ -30,7 +30,7 @@ export const CardInfo = () => {
                 <img src="/assets/star-icon.png" alt="star icon" />
                 <span> 5.0 (6) USA</span>
                 <p>Life lessons with Katie Zaferes</p>
-                <p></p>
+                <p> From $138 / person</p>
             </div>
         </div>
     );
