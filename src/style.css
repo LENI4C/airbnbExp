@@ -7,11 +7,15 @@
 body {
     background-color: white;
     color: grey;
-    font-size: calc(1em + .1vw);
+    font-size: calc(1em + 0.1vw);
+}
+
+img {
+    pointer-events: none;
 }
 
 nav {
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     box-shadow: 2px 2px 5px rgb(204, 199, 199);
     margin-bottom: 5vh;
 }
@@ -20,39 +24,40 @@ nav {
     margin-bottom: 5vh;
 }
 
-.hero img, .hero-text{
+.hero img,
+.hero-text {
     display: block;
     width: 80vw;
     height: auto;
-    margin: .5em auto;
+    margin: 0.5em auto;
 }
 
 .hero-text {
     margin-top: 1.5em;
-}
-
-.carousel-section {
-    /* border: 2px solid red; */
-    padding: .3em;
+    font-size: larger;
 }
 
 .card {
-    /* border: 2px solid blue; */
-    width: 75vw;
-    margin: .5em auto 2em;
+    width: 65vw;
+    margin: 0.5em auto 2em;
+    padding: .5em;
 }
 
 .card-image {
     overflow: hidden;
-    object-fit: top center;
     margin-bottom: 3vh;
-    /* border: 2px solid purple; */
 }
 
 .user-image {
     width: 100%;
     aspect-ratio: 1 / 1;
-    /* border: 2px solid gold; */
+    object-fit: fill;
+    border-radius: 1em;
+}
+
+.user-info {
+    width: 90%;
+    margin: auto;
 }
 
 .user-info img {
@@ -60,24 +65,35 @@ nav {
     aspect-ratio: 1 / 1;
 }
 
-@media (min-width : 768px) {
-    
+.user-info p {
+    margin-block: 0.2em;
+}
+
+/* IMAGES ARE GETTING TOO LARGE AT THIS SCREEN SIZE
+@media (min-width: 425px) {
+
+} */
+
+@media (min-width: 768px) {
     body {
-        font-size: calc(1em + .6vw);
+        font-size: calc(1em + 0.3vw);
     }
-    
-    .hero img{
+
+    .hero img {
         width: 60vw;
     }
 
     .carousel-section {
         display: flex;
-        flex: 1;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+
     .card {
-        width: 30%;
+        width: 28vw;
     }
 }
+
+/* @media (min-width: 1024px) {
+
+} */
