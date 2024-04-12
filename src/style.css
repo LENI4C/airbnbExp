@@ -39,7 +39,7 @@ nav {
 .card {
     /* border: 2px solid blue; */
     width: 75vw;
-    margin: 1em auto 2em;
+    margin: .5em auto 2em;
 }
 
 .card-image {
