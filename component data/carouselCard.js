@@ -1,6 +1,6 @@
 export default [
-    
     {
+        id: 1,
         userimage: "/assets/carousel01.png",
         rating: "5.0 (6)",
         country: "USA",
@@ -9,6 +9,7 @@ export default [
     },
 
     {
+        id: 2,
         userimage: "/assets/carousel02.png",
         rating: "5.0 (30)",
         country: "USA",
@@ -17,6 +18,7 @@ export default [
     },
 
     {
+        id: 3,
         userimage: "/assets/carousel03.png",
         rating: "4.0 (2)",
         country: "USA",
@@ -25,6 +27,7 @@ export default [
     },
 
     {
+        id: 4,
         userimage: "/assets/carousel03.png",
         rating: "4.0 (2)",
         country: "USA",
@@ -33,6 +36,7 @@ export default [
     },
 
     {
+        id: 5,
         userimage: "/assets/carousel02.png",
         rating: "5.0 (30)",
         country: "USA",
@@ -41,11 +45,11 @@ export default [
     },
 
     {
+        id: 6,
         userimage: "/assets/carousel01.png",
         rating: "5.0 (6)",
         country: "USA",
         userinfo: "Life lessons from Katie Zaferes",
         price: 138,
-    }
-    
+    },
 ];

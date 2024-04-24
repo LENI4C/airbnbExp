@@ -1,24 +1,13 @@
 import cardData from "../component data/carouselCard.js";
 const CarouselCard = () => {
-
     const renderCard = cardData.map((datum) => (
-        <Card
-            userimage={datum.userimage}
-            rating={datum.rating}
-            country={datum.country}
-            userinfo={datum.userinfo}
-            price={datum.price}
-        />
+        <Card key={datum.id} {...datum} />
     ));
 
-    return (
-        <section className="carousel-section">
-            {renderCard}
-        </section>
-    );
+    return <section className="carousel-section">{renderCard}</section>;
 };
 
-export const Card = ({ userimage, rating, country, userinfo, price }) => {
+export const Card = ({userimage, rating, country, userinfo, price}) => {
     return (
         <div className="card">
             <div className="card-image">
